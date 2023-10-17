@@ -1,0 +1,42 @@
+{
+  "name": "vue3-slider-verify",
+  "private": false,
+  "license": "MIT",
+  "description": "A simple slider verification component",
+  "keywords": [
+    "slider",
+    "sliderVerification",
+    "vue-slider-verify"
+  ],
+  "version": "1.0.3",
+  "type": "module",
+  "main": "slider-verify.umd.js",
+  "module": "slider-verify.es.js",
+  "files": [
+    "lib"
+  ],
+  "exports": {
+    "./style.css": "./style.css",
+    ".": {
+      "import": "./slider-verify.es.js",
+      "require": "./slider-verify.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.4",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
+    "path": "^0.12.7",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  }
+}
